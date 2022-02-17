@@ -1,0 +1,30 @@
+{
+	"name": "note",
+	"manifest_version": 2,
+	"version": "1.0",
+	"permissions": ["<all_urls>", "storage"],
+	"description": "现在只有一个记笔记功能哦！",
+	"icons":{
+		"16":"img/logo.png",
+		"48":"img/logo.png",
+		"128":"img/logo.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "img/logo.png",
+			"48": "img/logo.png"
+		},
+		"default_title": "note",
+		"default_popup": "popup.html"
+	},
+    "content_scripts": [
+		{
+			"js": ["jquery.min.js", "index.js","editormd/editormd.min.js"],
+			"run_at": "document_start",
+			"matches": ["http://*/*", "https://*/*"]
+		}
+	],
+  
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+	
+} 

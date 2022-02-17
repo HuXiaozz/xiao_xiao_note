@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:750px;
+    height: auto; 
+    background-color:#CCC;
+    overflow: hidden;
+    height:auto;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}	
+.node{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+.menu{
+    width: 12%;
+    height:550px;
+    float: left;
+    background-color: #A0A0A0;
+    transition: all 1s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.node-box{
+    width: 88%;
+    height: 550px;
+    overflow: hidden;
+    float: right;
+    transition: all 1s ease;
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    background-color: #D9E2E0;
+    color: #202126; 
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: "微软雅黑";
+}
+.content{
+    width:100%;
+    height: 510px;
+}
+.content textarea {
+    width: 101%;
+    height:100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.menu-list {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    padding: 5px 3px;
+    box-sizing: border-box;
+}
+.menu-list li {
+    cursor:hand; 
+    padding: 0 5px; 
+    margin-bottom: 2px; 
+    text-align: center;
+    font-size: 14px;
+    background-color: #D5D5D5;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #CCC
+}
+.menu-list li.hover{
+    color: #3782C2;
+}
+.menu-list li.active{
+    color: #FFF;
+    background-color: #029191;
+}
+.menu-add{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width:82%; 
+    margin: 0 3px; 
+    cursor:hand; 
+    padding: 0 5px; 
+    margin-bottom: 2px; 
+    text-align: center;
+    font-size: 14px;
+    background-color: #D5D5D5;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #CCC
+}
+.menu-add.del{
+    bottom: 0;
+}
+.menu-add.save{
+    bottom: 70;
+}
+
+.menu-add.hover{
+    color: #3782C2;
+}
+.title input{
+    width: 200px;
+    float: right; 
+    border: none;
+    padding: 0 10px;
+    height: 30px;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    transition: all 1s;
+}
+.title input.active{
+    width:250px;
+}
+.title span{
+    margin-left: 20px; 
+    float: left;
+}
+
+
+.nonclick{
+    cursor: not-allowed; 
+    pointer-events: none;
+    /* Chrome all / Safari all /opera15+*/ 
+    -webkit-user-select: none;   
+    /* Firefox all */  
+    -moz-user-select: none;     
+    /* IE 10+ */ 
+    -ms-user-select: none;       
+    /* 通用 */
+    user-select: none;
+}

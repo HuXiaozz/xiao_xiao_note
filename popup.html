@@ -1,0 +1,39 @@
+<html>
+	
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' gap:; script-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; object-src *; style-src 'self' data: 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data:; connect-src *">
+    
+	<head>
+	
+        <link rel="stylesheet" type="text/css" href="css/popup.css"/>
+        <link rel="stylesheet" href="editormd/css/editormd.css" />
+        <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="editormd/editormd.min.js"></script> 
+        
+    </head>
+   
+    <body>
+        
+        <div class="node">
+            <div class="menu">
+                <ul class="menu-list">
+                    <li rel=“-1” class="nonclick">我的笔记</li>
+                </ul>
+                
+                <div class="menu-add" id="add">新增</div>
+                <div class="menu-add save" id="save">保存</div>
+                <div class="menu-add del" id="del">删除</div>
+            </div>
+            <div class="node-box">
+                <div class="title"><input type="text" name="title" id="title" value="" placeholder="标题"/><span>晓晓笔记</span></div>
+                <div class="content"  id="test-editor">
+                    <textarea name="" rows="" cols="" placeholder="请选择一个笔记" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
